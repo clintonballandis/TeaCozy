@@ -1,7 +1,72 @@
-body {
+/*Universal Styles*/
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: Helvetica;
+  color: seashell;
+  opacity: 0.9;
 }
 
 div {
-  border: 1px solid black;
+
+  /*border: 1px solid white;*/
 }
+
+a {
+  color: white;
+}
+
+/*Header Styles*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 69px;
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 1px solid seashell;
+  z-index: 1;
+  background-color: black;
+  width: 100%;
+
+}
+
+.header--logo img {
+  height: 50px;
+  padding-left: 10px;
+}
+
+  .header--nav {
+    display: block;
+    flex-grow: 1;
+    padding-right: 40px;
+    text-align: right;
+  }
+
+  nav span {
+    display: inline-block;
+    padding: 20px 10px;
+  }
+
+/*Mission Section*/
+  .mission {
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    background-image: url("../images/img-mission-background.jpg");
+    justify-content: center;
+    align-items: center;
+  }
+
+  .locations {
+    display: flex;
+    height: 500px;
+    background-image: url("../images/img-locations-background.jpg");
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
